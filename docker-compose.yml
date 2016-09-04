@@ -1,5 +1,5 @@
 data:
-  container_name: rpi-bottle-data
+  container_name: rpi-python-bottle-data
   image: hypriot/armhf-busybox
   stdin_open: true
   tty: false
@@ -9,7 +9,7 @@ data:
   command: /bin/sh
 
 mysql:
-  container_name: rpi-bottle-db
+  container_name: rpi-python-bottle-db
   image: hypriot/rpi-mysql
   volumes:
    - ./initdb.d:/docker-entrypoint-initdb.d
@@ -24,7 +24,7 @@ mysql:
     - data
 
 application:
-  container_name: rpi-bottle-python
+  container_name: rpi-python-bottle-app
   entrypoint: /bin/bash
   build: .
   tty: false
