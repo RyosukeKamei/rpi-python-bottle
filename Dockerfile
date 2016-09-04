@@ -61,7 +61,7 @@ ADD ./app/server.py /home/bottle/server.py
 
 # ポートは8080(bottleは8080らしい)にし、サーバ起動ファイルを新しく作成した"bottle"ユーザで起動
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/bin/python3", "/home/bottle/server.py"]
+# ENTRYPOINT ["/usr/local/bin/python3", "/home/bottle/server.py"]
 USER bottle
 
 # vim の設定ファイル

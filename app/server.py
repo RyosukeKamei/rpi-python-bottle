@@ -6,7 +6,7 @@ import mysql.connector
 connector = mysql.connector.connect(
             user='python',
             password='python',
-            host='178.10.0.3',
+            host='172.17.0.3',
             database='sample')
 
 cursor = connector.cursor()
