@@ -15,8 +15,8 @@ mysql:
    - ./initdb.d:/docker-entrypoint-initdb.d
   environment:
     MYSQL_ROOT_PASSWORD: password
-    MYSQL_USER: measurement
-    MYSQL_PASSWORD: measurement
+    MYSQL_USER: bottle
+    MYSQL_PASSWORD: bottle
     MYSQL_DATABASE: measurement
   ports:
     - "3306:3306"
