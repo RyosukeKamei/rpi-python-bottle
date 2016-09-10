@@ -58,6 +58,7 @@ RUN python3 ./setup.py install
 
 # bottleを使ったサーバ起動ファイルをコピー
 ADD ./app/server.py /home/bottle/server.py
+RUN chown bottle:bottle server.py
 
 # ポートは8080(bottleは8080らしい)にし、サーバ起動ファイルを新しく作成した"bottle"ユーザで起動
 EXPOSE 8080

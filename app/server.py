@@ -53,7 +53,7 @@ def input_temperature():
 
     cursor.close
 
-    return true
+    return "OK"
     
 
 # コネクターをクローズ
