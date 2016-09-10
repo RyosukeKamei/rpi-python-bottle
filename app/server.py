@@ -46,7 +46,7 @@ def list():
 def input_temperature():
     # 温度を入力
     cursor = connector.cursor()
-    cursor.execute("INSERT INTO `temperatures` (`server_id`, `temperature`, `careted_at`, `careted_user`, `updated_at`, `updated_user`) VALUES (" + request.query.server_id + ", " + request.query.temperature + ", NOW(), " + request.query.user_id + ", NOW(), " + request.query.user_id + ")
+    cursor.execute("INSERT INTO `temperatures` (`server_id`, `temperature`, `careted_at`, `careted_user`, `updated_at`, `updated_user`) VALUES (" + request.query.server_id + ", " + request.query.temperature + ", NOW(), " + request.query.user_id + ", NOW(), " + request.query.user_id + ")")
 
     # コミット
     connector.commit();
