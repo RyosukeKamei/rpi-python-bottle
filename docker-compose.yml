@@ -23,17 +23,17 @@ mysql:
   volumes_from:
     - data
 
-application:
-  container_name: rpi-python-bottle-app
-  entrypoint: /bin/bash
-  image: rpipythonbottle_application
-  # build: .
-  tty: false
-  volumes_from:
-    - data
-  ports:
-    - "8080:8080"
-  environment:
-    CODEIGNITER_ENV: development
-  links:
-    - mysql:bottle-db
+#application:
+#  container_name: rpi-python-bottle-app
+#  entrypoint: /bin/bash
+#  image: rpipythonbottle_application
+#  # build: .
+#  tty: false
+#  volumes_from:
+#    - data
+#  ports:
+#    - "8080:8080"
+#  environment:
+#    CODEIGNITER_ENV: development
+#  links:
+#    - mysql:bottle-db
